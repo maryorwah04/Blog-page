@@ -1,3 +1,7 @@
+:root {
+    --default-font: 'Open sans', sans serif;
+}
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -8,4 +12,59 @@
     height: 100vh;
     background-color: #ebe1e1;
     padding: 5%;
+    font-family: var(--default-font);
+}
+
+.nav_flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-size: large;
+}
+
+li.nav_links:hover {
+    color: blue;
+    cursor: pointer;
+}
+
+button.nav_links {
+    padding: 5px;
+    height: 40px;
+    max-width: 7rem;
+    font-weight: 600;
+    font-size: medium;
+    background-color: rgb(228, 20, 20);
+    border: none;
+    border-radius: 10px;
+}
+
+button.nav_links:hover {
+    cursor: pointer;
+    background: black;
+    color: #fff;
+    box-shadow: 0 0 30px red;
+}
+
+.hamburger {
+    display: none;
+}
+
+
+@media screen and (max-width: 600px) {
+    .hamburger {
+        display: inline;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    .links {
+        display: none;
+    }
 }
