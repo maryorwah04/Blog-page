@@ -56,6 +56,27 @@ button.nav_links:hover {
     display: none;
 }
 
+main {
+    margin-top: 5%;
+}
+
+.headline_topic {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.headline {
+    display: flex;
+    gap: 5rem;
+}
+
+.headline_explain {
+    font-size: large;
+    color: rgb(60, 134, 134);
+}
+
+
 
 @media screen and (max-width: 600px) {
     .hamburger {
@@ -66,5 +87,19 @@ button.nav_links:hover {
 
     .links {
         display: none;
+    }
+
+    .headline {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .headline_topic {
+        gap: 1rem;
+    }
+
+    img.topic {
+        width: 100%;
     }
 }
