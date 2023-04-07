@@ -125,4 +125,19 @@ img.article {
     img.topic {
         width: 100%;
     }
+
+    .news {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 10vh;
+    }
+
+    img.article {
+        width: 100%;
+    }
+
+    .news_one, .news_two, .news_three {
+        width: 100%;
+    }
 }
