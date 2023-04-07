@@ -1,0 +1,150 @@
+:root {
+    --default-font: 'Open sans', sans serif;
+    --bg_color: #ebe1e1;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.body {
+    background-color: var(--bg_color);
+    padding: 5%;
+    font-family: var(--default-font);
+}
+
+.nav_flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-size: large;
+}
+
+li.nav_links:hover {
+    color: blue;
+    cursor: pointer;
+}
+
+button.nav_links {
+    padding: 5px;
+    height: 40px;
+    max-width: 7rem;
+    font-weight: 600;
+    font-size: medium;
+    background-color: rgb(228, 20, 20);
+    border: none;
+    border-radius: 10px;
+}
+
+button.nav_links:hover {
+    cursor: pointer;
+    background: black;
+    color: #fff;
+    box-shadow: 0 0 30px red;
+}
+
+.hamburger {
+    display: none;
+}
+
+main {
+    margin-top: 5%;
+}
+
+.headline_topic {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.headline {
+    display: flex;
+    gap: 5rem;
+}
+
+.headline_explain {
+    font-size: large;
+    color: rgb(60, 134, 134);
+}
+
+.news {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10vh;
+}
+
+.news_one, .news_two, .news_three {
+    width: calc(100% / 3.5);
+}
+
+img.article {
+    width: 100%;
+}
+
+.article_topic {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.article_explain {
+    font-size: large;
+    color: rgb(60, 134, 134);
+}
+
+footer {
+    color: rgb(60, 134, 134);
+    text-align: center;
+    margin-top: 10vh;
+}
+
+@media screen and (max-width: 600px) {
+    .hamburger {
+        display: inline;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    .links {
+        display: none;
+    }
+
+    .headline {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .headline_topic {
+        gap: 1rem;
+    }
+
+    img.topic {
+        width: 100%;
+    }
+
+    .news {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 10vh;
+    }
+
+    img.article {
+        width: 100%;
+    }
+
+    .news_one, .news_two, .news_three {
+        width: 100%;
+        border-bottom: 1px solid black;
+    }
+}
