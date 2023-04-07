@@ -9,7 +9,6 @@
 }
 
 .body {
-    height: 100vh;
     background-color: #ebe1e1;
     padding: 5%;
     font-family: var(--default-font);
@@ -76,6 +75,30 @@ main {
     color: rgb(60, 134, 134);
 }
 
+.news {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10vh;
+}
+
+.news_one, .news_two, .news_three {
+    width: calc(100% / 3.5);
+}
+
+img.article {
+    width: 100%;
+}
+
+.article_topic {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.article_explain {
+    font-size: large;
+    color: rgb(60, 134, 134);
+}
 
 
 @media screen and (max-width: 600px) {
