@@ -21,7 +21,7 @@
     align-items: center;
 }
 
-ul {
+ul.normal_list {
     list-style: none;
     display: flex;
     gap: 20px;
@@ -109,14 +109,45 @@ footer {
 
 @media screen and (max-width: 600px) {
     .hamburger {
-        display: inline;
+        display: inline-block;
         font-size: 30px;
         cursor: pointer;
+    }
+
+    .hamburger:hover .hamburger_content {
+        display: block;
     }
 
     .links {
         display: none;
     }
+
+    .hamburger_content {
+        text-align: center;
+        min-width: 150px;
+        border-radius: 5px;
+        background-color: rgb(212, 236, 236);
+        display: none;
+        position: absolute;
+        right: 5%;
+        z-index: 1;
+    }
+
+    ul.dropdown_list {
+        list-style-type: none;
+        font-size: large;
+    }
+
+    ul.dropdown_list > li {
+        margin-top: 10px;
+        border-bottom: 1px solid black;
+    }
+
+    ul.dropdown_list > li:hover {
+        color: rgb(231, 82, 22);
+    }
+
+
 
     .headline {
         display: flex;
